@@ -16,23 +16,7 @@
   <div class="welcome">
     <h1 class="glow">R.A.I.N</h1>
     <h2 class="subtitle">ROBOTICS AND ARTIFICIAL INTELLIGENT NETWORK</h2>
-    <button onclick="startMusic(); window.location.href='login.html'">Enter Chatroom</button>
+    <button onclick="window.location.href='login.html'">Enter Chatroom</button>
   </div>
-
-  <!-- Hidden Spotify music player -->
-  <iframe id="spotifyPlayer"
-          src="https://open.spotify.com/embed/track/6wf7Yu7cxBSPrRlWeSeK0Q?utm_source=generator"
-          width="0" height="0"
-          frameborder="0"
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          style="display: none;"></iframe>
-
-  <!-- Script to trigger music on button click -->
-  <script>
-    function startMusic() {
-      const player = document.getElementById('spotifyPlayer');
-      player.src += "&autoplay=1";
-    }
-  </script>
 </body>
 </html>
