@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+#rainVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.welcome {
+  text-align: center;
+  margin-top: 20%;
+  color: white;
+}
+
+.glow {
+  font-size: 60px;
+  color: orange;
+  text-shadow: 0 0 20px orange;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: white;
+  text-shadow: 0 0 10px orange;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: orange;
+  border: none;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 10px orange;
+}
