@@ -4,6 +4,61 @@
   <meta charset="UTF-8">
   <title>R.A.I.N Chatroom</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    #rainVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
+
+    .welcome {
+      text-align: center;
+      color: white;
+      margin-top: 15%;
+    }
+
+    .glow {
+      font-size: 60px;
+      font-weight: bold;
+      color: orange;
+      text-shadow: 0 0 20px orange;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: orange;
+      border: none;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 0 10px orange;
+    }
+
+    .spotify-player {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 352px;
+      z-index: 100;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  </style>
 </head>
 <body>
   <video autoplay muted loop id="rainVideo">
@@ -17,6 +72,8 @@
     <button onclick="window.location.href='login.html'">Enter Chatroom</button>
   </div>
 
-  <script src="script.js"></script>
+  <div class="spotify-player">
+    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6wf7Yu7cxBSPrRlWeSeK0Q?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
 </body>
 </html>
